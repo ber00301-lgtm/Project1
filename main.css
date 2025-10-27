@@ -1,0 +1,290 @@
+/*
+   START OF RESET
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;  
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #B2D79F;
+  text-align: center;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-size: 16px;
+  font-weight: normal;
+  color: whitesmoke;
+  text-align: center;
+}
+
+nav {
+  text-align: right;
+}
+
+header {
+  width: 100%;
+  background-color: whitesmoke; 
+  text-align: center;
+  padding: 20px 0; 
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: auto; 
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 15px 0;
+  color: #4a4a4a;
+  border-top: 2px solid #B2D79F;
+  font-size: 14px;
+}
+   
+/*END OF RESET*/
+
+/* HEADING/FOOTER*/
+
+.header-text {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1000px;
+  
+}
+
+.header-text h1 {
+  font-size: 26px;
+  color: #4a8f54;
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+.header-text nav {
+  display: flex;
+  justify-content: flex-start; /* ensures items stay on the left */
+  align-items: center;
+  gap: 30px;
+}
+
+.header-text a {
+  font-size: 22px;
+  color: #4a8f54;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.header-text a:hover {
+  text-decoration: underline;
+  color: #357a3d;
+}
+
+.footer-text p {
+color: #4a8f54;
+}
+
+
+/*SECTION & HERO*/
+section img {
+  border-radius: 10px;
+  display: block;
+  margin: 25px auto;
+  transform: scale(1.0);
+}
+
+.hero {
+  max-width: 950px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  border: 20px;
+  zoom: 1.2;
+  margin-bottom: 5%;
+
+}
+
+
+/*IMAGE ROW*/
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px 0;
+}
+
+.image-row img {
+  width: 300px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+
+/*BUTTON STYLES*/
+button {
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.button-row {
+  display: flex;         
+  justify-content: center;
+  gap: 205px;             
+}
+button:hover {
+  background-color: #45a049;
+
+}
+
+
+/* LEARN/NEWSLETTER*/
+.container {
+  max-width: 800px;      
+  width: 90%;            
+  margin: 40px auto;     
+  padding: 30px;         
+  text-align: center;
+  background-color: whitesmoke; 
+  border-radius: 10px;
+}
+
+.container h1 {
+  color: #4a8f54;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.container p {
+  color: #4CAF50;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.container button:hover {
+  background-color: #45a049;
+}
+.newsletter {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.newsletter h2{
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 15px;
+}
+
+.newsletter-form input {
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+}
+
+
+/* ITEMS */
+
+.material-section {
+  align-items: stretch; 
+  width: 100%;
+  max-width: 1400px;                  
+  display: flex;            
+  align-items: center;      
+  justify-content: space-between; 
+  gap: 10px;                
+  padding: 200px 200px;       
+  box-sizing: border-box;
+}
+
+
+.item-image img {
+  display: block;
+  width: 550px;  
+  height: 600px;
+  border-radius: 10px;
+}
+
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  text-align: right;     
+  gap: 22px;             
+  flex: 1;               
+  min-width: 260px;      
+}
+
+
+.item-text h2 {
+  margin: 0;
+  font-size: 60px;
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.item-text p {
+  margin: 0;
+  max-width: 250px; 
+  color: whitesmoke;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.item-text button{
+  color: whitesmoke;
+  background-color: #45a049;
+  border-radius: 28px;
+  padding: 14px 60px;
+  font-size: 18px;
+  font-weight: 700;
+  
+}
